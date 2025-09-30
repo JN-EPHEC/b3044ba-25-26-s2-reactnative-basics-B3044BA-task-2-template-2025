@@ -1,19 +1,28 @@
-import { ScrollView, StyleSheet } from "react-native";
+import ProfileCard from "@/components/ProfileCard";
+import { StyleSheet, View } from "react-native";
 
 const USERS_DATA = [
-  { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
-  { id: '2', nom: 'Benjamin Dubois', email: 'ben.dubois@email.com' },
-  { id: '3', nom: 'Chloé Garcia', email: 'chloe.g@email.com' },
-  { id: '4', nom: 'David Petit', email: 'david.petit@email.com' },
-  { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
+  { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com', imageUrl: "https://picsum.photos/200/300" },
+  { id: '2', nom: 'Benjamin Dubois', email: 'ben.dubois@email.com', imageUrl: "https://picsum.photos/200/300" },
+  { id: '3', nom: 'Chloé Garcia', email: 'chloe.g@email.com', imageUrl: "https://picsum.photos/200/300" },
+  { id: '4', nom: 'David Petit', email: 'david.petit@email.com', imageUrl: "https://picsum.photos/200/300" },
+  { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com', imageUrl: "https://picsum.photos/200/300" },
 ];
 
 
 export default function HomeScreen() {
   return (
-      <ScrollView>
-        { /* Render the list of users using the UserItem component */ }
-      </ScrollView>
+    <View style={styles.container}>
+      { /* Render the list of users using the UserItem component */ }
+      {USERS_DATA.map(user => (
+        <ProfileCard
+          key={user.id}
+          name={user.nom}
+          jobTitle={user.email}
+          imageUrl={user.imageUrl}
+        />
+      ))}
+    </View>
   );
 }
 

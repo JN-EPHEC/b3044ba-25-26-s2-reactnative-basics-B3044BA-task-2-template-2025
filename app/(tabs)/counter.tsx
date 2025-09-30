@@ -12,7 +12,7 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Replace this part with your soluce</Text>
+      <Text style={styles.title}>Replace this part with your CounterScreen component</Text>
     </SafeAreaView>
   );
 }
