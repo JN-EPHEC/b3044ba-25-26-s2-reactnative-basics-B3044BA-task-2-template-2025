@@ -12,6 +12,7 @@ const USERS_DATA = [
 export default function HomeScreen() {
   return (
       <ScrollView>
+        <Text>My to do list</Text>
         { /* Render the list of users using the UserItem component */ }
       </ScrollView>
   );
