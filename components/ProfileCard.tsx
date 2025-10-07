@@ -16,8 +16,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <>
-      <Text>Replace this part with your soluce</Text>
+    <View style={styles.card}>
+      <Image source=
+      
     </>
   );
 };
