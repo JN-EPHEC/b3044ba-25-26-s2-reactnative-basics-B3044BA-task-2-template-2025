@@ -93,7 +93,7 @@ Your task is to build the **static UI** for a "Todo List" application within `ap
 
 **Requirements:**
 
-1.  **Main View:** The entire app should be wrapped in a main `View` that provides some padding.
+1.  **Main View:** The entire app should   be wrapped in a main `View` that provides some padding.
 2.  **Title:** Display a large, bold title at the top, e.g., "My Todo List".
 3.  **TodoItem Component:** Create a new component file (`components/TodoItem.js`).
     - This component should accept a single `prop`, `text`.

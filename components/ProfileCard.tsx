@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text } from "react-native";
+import { processColorsInProps } from "react-native-reanimated/lib/typescript/Colors";
 
 // Define the props interface for type safety
 interface ProfileCardProps {
@@ -16,8 +17,13 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <>
-      <Text>Replace this part with your soluce</Text>
+    <view style={styles.card}>
+      <image source={{ uri: imageUrl }} style={styles.image} />
+      <view style={styles.textContainer}>
+        <Text style={styles.name}>{name}</Text>
+        <Text style={styles.jobTitle}>{jobTitle}</Text>
+      </view>
+    </view
     </>
   );
 };
@@ -53,5 +59,6 @@ const styles = StyleSheet.create({
     color: "gray",
   },
 });
+
 
 export default ProfileCard;
