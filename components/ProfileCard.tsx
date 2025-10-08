@@ -16,13 +16,13 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <>
-  <View>
-    <Image source={{ uri:imageUrl }} style={{ width:100,height:100,borderRadius:50,marginBottom:8 }} />
-    <Text style={{ fontWeight:'bold' }}>{name}</Text>
-    <Text style={{ color:'#666' }}>{jobTitle}</Text>
-  </View>
-    </>
+  <View style={styles.card}>
+      < Image source={{ uri: imageUrl }} style={styles.image} />
+      <View>
+        <Text style={styles.name}>{name}</Text>
+        <Text style={styles.jobTitle}>{jobTitle}</Text>
+      </View>
+    </View>
   );
 };
 

@@ -14,8 +14,8 @@ export default function HomeScreen() {
   return (
       <ScrollView>
         <ProfileCard
-  name="Alice"
-  jobTitle="React Native Developer"
+  name="Aiman"
+  jobTitle="<Developpeur>"
   imageUrl="https://picsum.photos/200/300"
 />
       </ScrollView>
