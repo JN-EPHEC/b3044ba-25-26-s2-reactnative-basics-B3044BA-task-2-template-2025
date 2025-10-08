@@ -1,4 +1,7 @@
 import { ScrollView, StyleSheet } from "react-native";
+import ProfileCard from "../../components/ProfileCard";
+
+// Carte pour les personnes
 
 const USERS_DATA = [
   { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
@@ -11,11 +14,42 @@ const USERS_DATA = [
 
 export default function HomeScreen() {
   return (
-      <ScrollView>
-        { /* Render the list of users using the UserItem component */ }
-      </ScrollView>
+    <ScrollView style={styles.container}>
+     <ProfileCard
+  name="Louis"
+  jobTitle="team dev"
+  imageUrl="https://picsum.photos/200/300"
+  
+/>
+<ProfileCard
+name="Anthony"
+jobTitle="BOSS Developer"
+imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+name="Sofian"
+jobTitle="team dev"
+imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+name="Matéo"
+jobTitle="team dev"
+imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+name="Victor"
+jobTitle="Scrum Master"
+imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+name="Natan"
+jobTitle="Product Owner"
+imageUrl="https://picsum.photos/200/300"
+/>
+    </ScrollView>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
