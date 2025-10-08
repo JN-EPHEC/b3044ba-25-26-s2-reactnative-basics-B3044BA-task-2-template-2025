@@ -2,6 +2,7 @@ import TodoItem from "@/components/TodoItem";
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
+// carte personne
 
 const USERS_DATA = [
   { id: '1', nom: 'Alice Martin', email: 'alice.martin@email.com' },
