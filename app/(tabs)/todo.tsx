@@ -1,6 +1,7 @@
-import TodoItem from "@/components/TodoItem";
 import React from "react";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import TodoItem from "../../components/Todoitem";
+ 
 
 export default function TodoListScreen() {
   return (
@@ -8,9 +9,9 @@ export default function TodoListScreen() {
       <Text style={styles.title}>Ma liste de choses à faire</Text>
 
       <View style={styles.list}>
-      <TodoItem text="Learn React Native" />
-      <TodoItem text="Build a static UI" />
-      <TodoItem text="Practice with StyleSheet" />
+        <TodoItem text="Learn React Native" />
+        <TodoItem text="Build a static UI" />
+        <TodoItem text="Practice with StyleSheet" />
       </View>
     </SafeAreaView>
   );
