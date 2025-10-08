@@ -9,10 +9,10 @@ const USERS_DATA = [
   { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
 ];
 
-
+// Aya Taifour - c'est un commentaire pour l'exer ie en classe 
 export default function HomeScreen() {
   return (
-      <ScrollView>
+      < ScrollView>
         <ProfileCard
   name="Aya"
   jobTitle="Product Owner"
