@@ -1,3 +1,4 @@
+import ProfileCard from "@/components/ProfileCard";
 import { ScrollView, StyleSheet } from "react-native";
 
 const USERS_DATA = [
@@ -8,14 +9,30 @@ const USERS_DATA = [
   { id: '5', nom: 'Émilie Rousseau', email: 'emilie.rousseau@email.com' },
 ];
 
-
+// Aya Taifour - c'est un commentaire pour l'exer ie en classe 
 export default function HomeScreen() {
   return (
-      <ScrollView>
-        { /* Render the list of users using the UserItem component */ }
-      </ScrollView>
-  );
-}
+      < ScrollView>
+        <ProfileCard
+  name="Aya"
+  jobTitle="Product Owner"
+  imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+  name="Louis"
+  jobTitle="le toxico"
+  imageUrl="https://picsum.photos/200/300"
+/>
+<ProfileCard
+  name="jiji"
+  jobTitle="La plus belle"
+  imageUrl="https://picsum.photos/200/300"
+/>
+  </ScrollView> 
+  )
+};
+
+
 
 const styles = StyleSheet.create({
   container: {
