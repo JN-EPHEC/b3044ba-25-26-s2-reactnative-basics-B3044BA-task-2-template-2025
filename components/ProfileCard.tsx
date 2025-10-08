@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 // Define the props interface for type safety
 interface ProfileCardProps {
@@ -17,7 +17,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 }) => {
   return (
     <>
-      <Text>Replace this part with your soluce</Text>
+  <View>
+    <Image source={{ uri:imageUrl }} style={{ width:100,height:100,borderRadius:50,marginBottom:8 }} />
+    <Text style={{ fontWeight:'bold' }}>{name}</Text>
+    <Text style={{ color:'#666' }}>{jobTitle}</Text>
+  </View>
     </>
   );
 };
