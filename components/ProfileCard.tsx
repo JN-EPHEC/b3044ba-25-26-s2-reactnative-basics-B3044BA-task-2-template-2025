@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 // Define the props interface for type safety
 interface ProfileCardProps {
@@ -11,14 +11,18 @@ interface ProfileCardProps {
 // The component receives 'props' as an argument.
 // We use destructuring to get the values we need directly.
 const ProfileCard: React.FC<ProfileCardProps> = ({
+  //bite
   name,
   jobTitle,
   imageUrl,
 }) => {
   return (
-    <>
-      <Text>Replace this part with your soluce</Text>
-    </>
+    
+    <View style={styles.card}>
+
+        <Text style={styles.najobTitle}>{MyTodoList}</Text>
+   
+  </View >
   );
 };
 
